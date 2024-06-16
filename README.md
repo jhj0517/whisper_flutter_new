@@ -62,3 +62,23 @@ final String transcription = await whisper.transcribe(
 );
 print(transcription);
 ```
+
+# Platform Setup
+- **Android**
+1. Setup in `android\app\build.gradle`
+```
+android {
+    compileSdk 34
+    ndkVersion "27.0.11718014"
+}
+defaultConfig {
+    minSdkVersion 24
+}
+```
+2. Android Studio Settings -> Android SDK -> SDK Tools -> Install `CMake`
+3. Install [Ninja](https://github.com/ninja-build/ninja/releases) and add it to SYSTEM PATH.
+
+
+
+
+
