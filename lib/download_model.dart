@@ -12,24 +12,20 @@ import "package:flutter/foundation.dart";
 
 /// Available whisper models
 enum WhisperModel {
-  // no model
-  none(""),
-
   /// tiny model for all languages
   tiny("tiny"),
-
+  tinyQ5("tiny-q5_1"),
   /// base model for all languages
   base("base"),
-
+  baseQ5("base-q5_1"),
   /// small model for all languages
   small("small"),
-
   /// medium model for all languages
   medium("medium"),
-
   /// large model for all languages
   largeV1("large-v1"),
   largeV2("large-v2");
+
 
   const WhisperModel(this.modelName);
 

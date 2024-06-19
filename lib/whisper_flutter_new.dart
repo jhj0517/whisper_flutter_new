@@ -74,9 +74,9 @@ class Whisper {
   Future<Map<String, dynamic>> _request({
     required WhisperRequestDto whisperRequest,
   }) async {
-    if (model != WhisperModel.none) {
-      await _initModel();
-    }
+
+    await _initModel();
+
     return Isolate.run(
       () async {
         final Pointer<Utf8> data =
